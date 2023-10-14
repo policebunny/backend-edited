@@ -5,6 +5,7 @@
           class="camera"
           @decode="onDecode"
         ></StreamBarcodeReader>
+        <audio id="audio-element" src="https://www.myinstants.com/media/sounds/store-scanner-beep-sound-effect.mp3"></audio>
     </v-card-text>
   </v-card>
 </template>
@@ -23,7 +24,10 @@ export default {
   methods: {
     onDecode(decodedData) {
       // Handle the decoded data here
+      audio = document.getElementById("audio-element");
+      audio.play();
       console.log("Decoded Data:", decodedData);
+
       this.$emit("barcodeScanned",decodedData)
     },
   },components: {
