@@ -1,6 +1,6 @@
 <template>
   <v-card :height="h-75">
-    <v-card-title class="headline">Scanned Barcodes 1</v-card-title>
+    <v-card-title class="headline">Scanned Barcodes</v-card-title>
     <v-divider></v-divider>
     <v-card-text  :max-height="50">
       <v-virtual-scroll
