@@ -4,6 +4,7 @@
         <v-layout justify-center>
           <v-flex xs12 md6>
             <!-- Camera Scanner Component -->
+            <h1>Scanning might take a while</h1>
             <camera-scanner @barcodeScanned="addBarcode"></camera-scanner>
 
             <!-- Barcode List Component -->
