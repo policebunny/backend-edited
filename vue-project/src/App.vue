@@ -21,8 +21,8 @@ import axios from "axios";
 export default {
   data() {
     return {
-      //baseUrl: "http://localhost:8080",
-      baseUrl: "backende-test-scanner.azurewebsites.net",
+      baseUrl: "http://localhost:8080",
+      //baseUrl: "backende-test-scanner.azurewebsites.net",
       scannedBarcodes: [],
     };
   },
